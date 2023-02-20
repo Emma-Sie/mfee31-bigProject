@@ -1,0 +1,265 @@
+$main-color: #fb570b;
+$sub-color: #fc8f05;
+$gray-color: #c3c7cf;
+
+.title {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  .titleFirst {
+    color: $main-color;
+  }
+}
+.Nav-title {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+.titleCoupon {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  .titleContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      text-align: center;
+    }
+    .titleFirst {
+      color: $main-color;
+    }
+  }
+}
+.tableFrame {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 60px;
+  .tableLeft {
+    // width: 20%;
+    // display: flex;
+    // align-items: center;
+    ul {
+      list-style: none;
+      padding: 0px;
+      li {
+        padding: 10px;
+        button {
+          margin-bottom: 10px;
+          width: 125px;
+          border-radius: 13px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          font-weight: bold;
+          color: hsla(0, 0%, 0%, 0.74);
+          font-size: 20px;
+        }
+        .btnHover {
+          background-color: white;
+          &:hover {
+            background-color: $sub-color;
+          }
+        }
+        .btnOrder {
+          background-color: $sub-color;
+        }
+      }
+    }
+  }
+  .tableRight {
+    width: 80%;
+    .unExpired {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 4px solid #00000073;
+      .unExpiredWord {
+        font-size: 20px;
+        font-weight: bold;
+        padding-bottom: 15px;
+      }
+      .couponRules {
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        border: 1px solid $main-color;
+        margin-bottom: 15px;
+        &:hover {
+          border: 1px solid $sub-color;
+          background-color: $sub-color;
+        }
+      }
+      .btnAll {
+        background-color: $sub-color;
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        width: 70px;
+        height: 45px;
+        &:hover {
+          background-color: hsl(34, 98%, 55%);
+        }
+      }
+      .menuBar {
+        font-size: 40px;
+        color: $main-color;
+        margin-bottom: 10px;
+      }
+    }
+    .unExpiredCoupon {
+      width: 100%;
+      height: fit-content;
+      padding: 30px;
+      .Coupon1 {
+        width: 600px;
+        height: 180px;
+        background-color: black;
+        display: flex;
+        margin-bottom: 30px;
+        .CouponLeft {
+          width: 30%;
+          height: 100%;
+          border-right: 2px solid white;
+          .CouponIcon {
+            width: 100%;
+            .shoppingIcon {
+              color: white;
+              font-size: 100px;
+              width: 100%;
+            }
+          }
+          .CouponContent {
+            font-size: 20px;
+            text-align: center;
+            font-weight: bold;
+            color: $main-color;
+            padding-bottom: 15px;
+          }
+        }
+        .CouponRight {
+          width: 70%;
+          .CouponUp {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            .discount {
+              color: $main-color;
+              font-size: 40px;
+              font-weight: bold;
+              padding-top: 40px;
+              padding-left: 20px;
+            }
+          }
+          .CouponDown {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-between;
+            .date {
+              color: white;
+              font-weight: bold;
+              font-size: 20px;
+              align-self: center;
+              padding-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.Titlerules{
+  font-size: 30px !important;
+  font: bold;
+  span{
+    color:#fb570b
+  }
+}
+.Bodyrules{
+  line-height: 40px;
+  span{
+    color:#fb570b
+  }
+}
+.paginationUl {
+  width: 100%;
+  padding-left: 0;
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+  .tableFrame{
+    display: block;
+    .tableLeft {
+      width: 100% !important;
+      padding-top: 0px;
+      ul {
+        width: 100% !important;
+        display: grid !important;
+        grid-template-columns: repeat(3, 1fr) !important;
+        li {
+          .btnLink {
+            padding: 5px 9px !important;
+            font-size: 18px !important;
+            background-color: white !important;
+            &:hover {
+              background-color: $sub-color !important;
+            }
+            .btnClick {
+              background-color: $sub-color !important;
+            }
+          }
+        }
+      }
+    }
+    .unExpiredCoupon {
+      padding: 30px 5px !important;
+      .Coupon1 {
+        width: 350px !important;
+        margin: 30px auto !important;
+        height: 150px !important;
+        .CouponLeft {
+          .CouponIcon {
+            width: 100%;
+            .shoppingIcon {
+              font-size: 75px !important;
+            }
+          }
+          .CouponContent {
+            font-size: 18px !important;
+          }
+        }
+        .CouponRight {
+          width: 70%;
+          .CouponUp {
+            .discount {
+              font-size: 26px !important;
+            }
+          }
+          .CouponDown {
+            .date {
+              font-size: 15px !important;
+            }
+            .rules {
+              font-size: 13px !important;
+              padding: 20px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 651px) and (max-width: 800px) {
+  .Coupon1 {
+    width: 500px !important;
+  }
+}
+@media screen and (min-width: 880px) and (max-width: 1200px) {
+  .Coupon1 {
+    width: 500px !important;
+  }
+}

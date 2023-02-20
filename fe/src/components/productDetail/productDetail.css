@@ -1,0 +1,169 @@
+.productDetail {
+  padding: 80px;
+}
+@media screen and (max-width: 540px) {
+  .productDetail {
+    padding: 50px;
+  }
+}
+.productDetail .productDetailTop {
+  display: flex;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #c3c7cf;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailTop {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.productDetail .productDetailTop .productImg {
+  width: 60%;
+  margin-right: 5%;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailTop .productImg {
+    width: 100%;
+    margin-bottom: 1em;
+  }
+}
+.productDetail .productDetailTop .productImg .card {
+  margin: 30px;
+}
+.productDetail .productDetailTop .productImg .inline-container {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.productDetail .productDetailTop .productImg .inline-container .card {
+  display: inline-block !important;
+  margin: 0 auto;
+  text-align: center;
+}
+.productDetail .productDetailTop .productInfo {
+  width: 35%;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailTop .productInfo {
+    width: 100%;
+    text-align: center;
+  }
+}
+.productDetail .productDetailTop .productInfo .line {
+  width: 100%;
+  height: 3px;
+  background-color: #c3c7cf;
+  border: 0;
+  margin: 20px 0;
+}
+.productDetail .productDetailTop .productInfo .commentsStar {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailTop .productInfo .commentsStar {
+    justify-content: center;
+  }
+}
+.productDetail .productDetailTop .productInfo .selectAmountTitle {
+  color: #8b8b8b;
+}
+.productDetail .productDetailTop .productInfo .selectAmount {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.productDetail .productDetailTop .productInfo .buyingBtn {
+  background-color: #cf3341;
+  font-weight: bolder;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.productDetail .productDetailTop .productInfo .addBtn .addFav {
+  width: 50%;
+  border: none;
+  background-color: #fff;
+  color: #cf3341;
+  font-weight: bolder;
+}
+.productDetail .productDetailTop .productInfo .addBtn .addFav:hover {
+  border: 1px solid #cf3341;
+}
+.productDetail .productDetailTop .productInfo .addBtn .addCart {
+  width: 50%;
+  border: none;
+  background-color: #fff;
+  color: #cf3341;
+  font-weight: bolder;
+}
+.productDetail .productDetailTop .productInfo .addBtn .addCart:hover {
+  border: 1px solid #cf3341;
+}
+.productDetail .productDetailText {
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #c3c7cf;
+}
+.productDetail .productDetailText .DetailYoutube .productYoutube {
+  width: 100%;
+}
+.productDetail .productDetailComment .commentCard .cardRow {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailComment .commentCard .cardRow {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.productDetail .productDetailComment .commentCard .left {
+  width: 20%;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailComment .commentCard .left {
+    width: 30%;
+  }
+}
+.productDetail .productDetailComment .commentCard .left .userImg {
+  width: 80px;
+  height: 80px;
+  border: 1px solid #000;
+  border-radius: 99em;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailComment .commentCard .left .userImg {
+    width: 50px;
+    height: 50px;
+  }
+}
+.productDetail .productDetailComment .commentCard .left .userImg .userImgBorder {
+  overflow: hidden;
+}
+.productDetail .productDetailComment .commentCard .middle {
+  width: 50%;
+}
+.productDetail .productDetailComment .commentCard .middle .commentsStar {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailComment .commentCard .middle .commentsStar {
+    white-space: nowrap;
+  }
+}
+.productDetail .productDetailComment .commentCard .middle .commentsText {
+  white-space: nowrap;
+}
+.productDetail .productDetailComment .commentCard .userInfo {
+  width: 30%;
+  font-weight: bolder;
+  font-size: medium;
+  text-align: right;
+}
+@media screen and (max-width: 540px) {
+  .productDetail .productDetailComment .commentCard .userInfo {
+    width: 100%;
+  }
+}/*# sourceMappingURL=productDetail.css.map */

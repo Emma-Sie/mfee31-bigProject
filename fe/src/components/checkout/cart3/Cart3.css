@@ -1,0 +1,63 @@
+.cart-three {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 540px) {
+  .cart-three {
+    padding: 0 5%;
+  }
+}
+.cart-three .comment {
+  padding: 20px;
+}
+.cart-three .orderbox {
+  padding: 80px;
+}
+.cart-three .orderbox .order-success p {
+  text-align: center;
+}
+.cart-three .orderbox .underBox {
+  width: 100%;
+}
+.cart-three .orderbox .underBox .FirstBox,
+.cart-three .orderbox .underBox .SecondBox {
+  width: 100%;
+}
+.cart-three .orderbox .underBox .FirstBox .boxes,
+.cart-three .orderbox .underBox .SecondBox .boxes {
+  width: 50%;
+}
+@media screen and (max-width: 540px) {
+  .cart-three .orderbox .underBox .FirstBox .boxes,
+  .cart-three .orderbox .underBox .SecondBox .boxes {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cart-three .orderbox .underBox .FirstBox {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 540px) {
+  .cart-three .orderbox .underBox .SecondBox {
+    flex-direction: column;
+  }
+}
+.cart-three .orderbox .underBox h3 {
+  font-weight: bold;
+  margin-left: 20px;
+}
+.cart-three .orderbox .underBox p {
+  line-height: 45px;
+  margin-left: 20px;
+  font-size: 18px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+@media screen and (max-width: 540px) {
+  .cart-three .orderbox .underBox p {
+    margin-left: 0px;
+    padding: 5%;
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=Cart3.css.map */

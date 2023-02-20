@@ -1,0 +1,378 @@
+$main-color: #fb570b;
+$sub-color: #fc8f05;
+$gray-color: #c3c7cf;
+
+.title {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  .titleFirst {
+    color: $main-color;
+  }
+}
+.Nav-title {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tableFrameProfile {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-bottom: 60px;
+    .tableLeft {
+        width: 20%;
+        display: flex;
+        align-content: center;
+        padding-top: 100px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          li {
+            margin-bottom: 40px;
+            .btnLink {
+              padding: 15px 20px;
+              text-decoration: none;
+              border-radius: 10px;
+              font-weight: bold;
+              font-size: 20px;
+              color: hsla(0, 0%, 0%, 0.74);
+            }
+            .btnHover {
+              background-color: white;
+              &:hover {
+                background-color: $sub-color;
+              }
+            }
+          }
+        }
+      }
+    .tableRight {
+        width: 80%;
+        border: 1px solid #00000027;
+        .profileInfo {
+            width: 70% !important;
+            height: 100%;
+            margin: 0 auto;
+            padding-top: 0px !important;
+
+            .inputChanging {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.701);
+                display: flex;
+
+                // width: 100%;
+                label {
+                    padding: 10px;
+                    width: 30%;
+                    text-align: start;
+                    padding-left: 30px;
+                    align-self: center;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+
+                .inputWord {
+                    padding: 10px;
+                    width: 70%;
+                    margin: 20px;
+                }
+
+                .input {
+                    margin: 10px;
+                    width: 70%;
+                    margin: 20px;
+                    border-radius: 5px;
+                }
+            }
+            .inputEditing {
+                width: 60%;
+                margin: 0 auto;
+                height: 80px;
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .btnGroups {
+                align-items: center;
+
+                .btnYes {
+                    background-color: $sub-color;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-left: 20px;
+                }
+
+                .btnNo {
+                    background-color: $gray-color;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .profileStatus {
+            width: 30% !important;
+            margin: 0 auto;
+            padding-top: 20px !important;
+            border-right: 1px solid #00000027;
+
+            .profilePhoto {
+                margin-top: 20px;
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                border: 2px solid $sub-color;
+                margin: 0 auto;
+                overflow: hidden;
+
+                .profileImage {
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+
+            .profileName {
+                font-size: 40px;
+                color: rgba(0, 0, 0, 0.719);
+                text-align: center;
+                padding: 30px;
+                font-weight: bold;
+            }
+
+            .authorityStatus {
+                width: 80%;
+                margin: 0 auto;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.719);
+                text-align: center;
+                font-weight: bold;
+                .verifyBtn {
+                    margin-top: 20px;
+                    border: 0;
+                    padding: 5px;
+                    border-radius: 10px;
+                    width: 150px;
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+            }
+
+            .btns {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .profileBtn {
+                    background-color: $main-color;
+                    border: 0;
+                    padding: 5px;
+                    border: 1px solid $main-color;
+                    border-radius: 10px;
+                    width: 150px;
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                    &:hover {
+                        background-color: hsl(19, 100%, 60%);
+                        border: 1px solid hsl(19, 100%, 60%);
+                    }
+                }
+
+                .photoUpload {
+                    background-color: $sub-color;
+                    border-radius: 10px;
+                    width: 150px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+    .title {
+        width: 70% !important;
+    }
+    .tableFrameProfile {
+        display: block !important;
+        .tableLeft {
+            width: 100% !important;
+
+            ul {
+                width: 100% !important;
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+
+                li {
+                    .btnLink {
+                        padding: 5px 9px !important;
+                        font-size: 18px !important;
+                        background-color: white !important;
+
+                        &:hover {
+                            background-color: $sub-color !important;
+                        }
+
+                        .btnClick {
+                            background-color: $sub-color !important;
+                        }
+                    }
+                }
+            }
+        }
+        .tableRight {
+            display: block !important;
+            width: 95%;
+            margin: 0 auto;
+            .profileStatus {
+                width: 100% !important;
+                border: none;
+                border-bottom: 1px solid #00000027;
+            }
+            .profileName {
+                // word-wrap: break-word !important;
+                font-size: 30px !important;
+                padding: 30px 30px 30px 15px !important;
+            }
+            .authorityStatus {
+                white-space: nowrap;
+                font-size: 14px !important;
+            }
+            .profileInfo {
+                width: 100% !important;
+                padding-bottom: 20px;
+
+                .inputChanging {
+                    width: 100%;
+
+                    label {
+                        width: 50% !important;
+                        font-size: 14px !important;
+                    }
+
+                    .inputWord {
+                        width: 40% !important;
+                        white-space: nowrap;
+                        font-size: 14px !important;
+                        margin: 0 !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 650px) and (max-width: 885px) {
+    .title {
+        width: 70% !important;
+    }
+
+    .tableFrameProfile {
+        display: block !important;
+
+        .tableLeft {
+            width: 100% !important;
+            padding-top: 0px !important;
+
+            ul {
+                width: 100% !important;
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+
+                li {
+                    .btnLink {
+                        padding: 5px 9px !important;
+                        font-size: 20px !important;
+                        background-color: white !important;
+
+                        &:hover {
+                            background-color: $sub-color !important;
+                        }
+
+                        .btnClick {
+                            background-color: $sub-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tableRight {
+            display: block !important;
+            width: 95%;
+            margin: 0 auto;
+            .profileStatus {
+                width: 100% !important;
+                border: none;
+                border-bottom: 1px solid #00000027;
+            }
+            .profileName {
+                word-wrap: break-word !important;
+                font-size: 35px !important;
+            }
+
+            .authorityStatus {
+                font-size: 16px !important;
+            }
+
+            .profileInfo {
+                width: 100% !important;
+                padding-bottom: 20px;
+                .inputChanging {
+                    width: 100% !important;
+
+                    label {
+                        width: 50% !important;
+                        font-size: 19px !important;
+                    }
+
+                    .inputWord {
+                        width: 40% !important;
+                        white-space: nowrap !important;
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 886px) and (max-width: 1200px) {
+    .tableFrameProfile {
+        .tableRight {
+            .profileName {
+                font-size: 35px !important;
+            }
+
+            .authorityStatus {
+                font-size: 18px !important;
+            }
+
+            .btns {
+                button {
+                    font-size: 18px !important;
+                }
+            }
+
+            .inputChanging {
+                width: 90% !important;
+                font-size: 20px !important;
+
+                label {
+                    width: 50% !important;
+                    font-size: 20px !important;
+                }
+
+                .inputWord {
+                    width: 40% !important;
+                    white-space: nowrap !important;
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+}

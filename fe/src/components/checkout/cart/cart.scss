@@ -1,0 +1,75 @@
+.cart {
+    max-width: 1200px;
+    margin: 0 auto;
+    @media screen and (max-width: 540px) {
+        padding: 0 4%;
+    }
+    .cart-quantity-button {
+        border-color: #c3c7cf;
+    }
+    Table {
+        margin-bottom: 2rem;
+    }
+
+    .shipping-way {
+        display: flex;
+        .left-bottom {
+            .cartTitle {
+                background-color: #feac44;
+                width: 100%;
+                border: 1px solid #c3c7cf;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            .content-info {
+                border: 1px solid #c3c7cf;
+                padding: 0.5rem;
+                min-height: 300px;
+            }
+            margin-right: 3%;
+            width: 60%;
+            @media screen and (max-width: 540px) {
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 540px) {
+            display: block;
+        }
+
+        .right-bottom {
+            .cartTitle {
+                background-color: #feac44;
+                width: 100%;
+                border: 1px solid #c3c7cf;
+                padding: 0.5rem;
+                text-align: center;
+            }
+            .content-info {
+                border: 1px solid #c3c7cf;
+                padding: 0.5rem;
+                min-height: 300px;
+
+                Button {
+                    background-color: #cf3341;
+                    color: #fff;
+                    font-weight: bolder;
+                    width: 100%;
+
+                    .cartAmount {
+                        @media screen and (max-width: 540px) {
+                            width: 0.5rem;
+                        }
+                    }
+                }
+            }
+            width: 40%;
+            margin-bottom: 1rem;
+            @media screen and (max-width: 540px) {
+                width: 100%;
+            }
+        }
+    }
+}
+.ant-select {
+    width: 100%;
+}

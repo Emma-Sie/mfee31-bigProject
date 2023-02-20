@@ -1,0 +1,186 @@
+$main-color: #FB570B;
+$sub-color: #FC8F05;
+$gray-color: #C3C7CF;
+.btnAddCoupons {
+    color: white !important;
+    width: 140px;
+    font-weight: bold !important;
+    &:hover {
+        background-color: hsl(34, 93%, 56%);
+        border: 1px solid hsl(34, 93%, 56%);
+    }
+    margin-bottom: 20px;
+}
+.tableCouponSeller {
+    width: 100%;
+    table-layout: fixed;
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+        th {
+            font-size: 18px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        td{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.482);
+            font-weight: bold;
+            font-size: 20px;
+            padding: 15px 5px;
+        }
+    }
+}
+.formOutside {
+    form {
+        .formDiv {
+            font-size: 20px;
+            display: flex;
+            justify-content: space-between;
+            label {
+                font-size: 20px;
+                font-weight: bold;
+                padding-right: 10px;
+                padding-bottom: 30px;
+            }
+            input {
+                margin-bottom: 20px;
+                border-radius: 5px;
+                height: 40px;
+            }
+        }
+        .btnAddCoupon {
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+.returnPage {
+    background-color: transparent;
+    border: 1px solid transparent;
+    text-decoration: underline;
+    color: $gray-color;
+    margin-top: 30px;
+    font-weight: bold;
+    &:hover {
+        color: $main-color;
+        background-color: transparent;
+        border: 1px solid transparent;
+    }
+}
+
+.changeInput {
+    width: 150px;
+    border-radius: 5px;
+}
+.bottomFrame {
+    margin-top: 50px;
+    padding: 0 15px 70px;
+    background-color: hsla(220, 11%, 79%, 0.322);
+    .IsExpiredCoupon {
+        padding-top: 50px;
+        h4 {
+            font-weight: bold;
+        }
+    }
+    .tableIsExpired {
+        width: 100%;
+        table-layout: fixed;
+        tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+        th {
+            font-size: 18px;
+            border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+            text-align: center;
+            font-weight: bold;
+            padding: 10px 15px;
+        }
+        td{
+            text-align: center;
+            color: rgba(0, 0, 0, 0.482);
+            font-weight: bold;
+            font-size: 20px;
+            padding: 15px 5px;
+        }
+        }
+        .textLine {
+            text-decoration: line-through;
+        }
+    }
+}
+@media screen and (min-width: 430px) and (max-width: 930px) {
+    .tableCouponSeller {
+        th, td{
+            font-size: 10px !important;
+        }
+        .couponHide {
+            display: none;
+        }
+    }
+    .bottomFrame {
+    margin-top: 30px;
+    padding: 0 15px 70px;
+    background-color: hsla(220, 11%, 79%, 0.322);
+    .IsExpiredCoupon {
+        padding-top: 20px;
+        
+    }
+    .tableIsExpired {
+        th, td{
+            font-size: 10px !important;
+        }
+        .couponHide {
+            display: none;
+        }
+    }
+}
+}
+@media screen and (min-width: 930px) and (max-width: 1250px) {
+    .tableCouponSeller {
+        tr {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+            th {
+                font-size: 13px !important;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+                text-align: center;
+                font-weight: bold;
+                padding: 10px 15px;
+            }
+            td{
+                text-align: center;
+                color: rgba(0, 0, 0, 0.482);
+                font-weight: bold;
+                font-size: 13px !important;
+                padding: 15px 5px;
+            }
+        }
+    }
+    .bottomFrame {
+    margin-top: 30px;
+    padding: 0 15px 70px;
+    background-color: hsla(220, 11%, 79%, 0.322);
+    .IsExpiredCoupon {
+        padding-top: 20px;
+    }
+    .tableIsExpired {
+        tr {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+            th {
+                font-size: 13px !important;
+                border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+                text-align: center;
+                font-weight: bold;
+                padding: 10px 15px;
+            }
+            td{
+                text-align: center;
+                color: rgba(0, 0, 0, 0.482);
+                font-weight: bold;
+                font-size: 13px !important;
+                padding: 15px 5px;
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,54 @@
+.step-groups {
+  display: flex;
+  height: 5rem;
+  max-height: 6rem;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 540px) {
+  .step-groups {
+    width: 80%;
+    margin: 3rem auto;
+  }
+}
+.step-groups .step-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-groups .step-group .number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  color: white;
+  background-color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 540px) {
+  .step-groups .step-group .number {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+.step-groups .step-group .number.active {
+  background-color: #feac44;
+}
+.step-groups .line {
+  width: 12rem;
+  height: 0.2rem;
+  background-color: black;
+  margin-bottom: 2%;
+}
+@media screen and (max-width: 540px) {
+  .step-groups .line {
+    margin-bottom: 15%;
+  }
+}/*# sourceMappingURL=step.css.map */

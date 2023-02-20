@@ -1,0 +1,33 @@
+.formInput {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.formInput input {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+  border: 2px solid hsla(19deg, 97%, 51%, 0.452);
+  caret-color: #feac44;
+  width: 100%;
+}
+.formInput input:invalid[focused=true] {
+  border: 2px solid #fc8f05;
+}
+.formInput input:invalid[focused=true] ~ span {
+  display: block;
+}
+.formInput label {
+  font-family: "Monda", sans-serif;
+  font-size: 20px;
+  color: black;
+}
+.formInput span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}/*# sourceMappingURL=formInput.css.map */

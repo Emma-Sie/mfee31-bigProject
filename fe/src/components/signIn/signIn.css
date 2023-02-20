@@ -1,0 +1,105 @@
+.signIn {
+  width: 40%;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 3rem auto;
+  font-size: 20px;
+  border: 3px solid hwb(0 0% 100%/0.098);
+}
+.signIn .signIn_title {
+  text-align: center;
+}
+.signIn .signIn_title h2 {
+  font-weight: bold;
+  padding: 30px;
+}
+.signIn .signIn_title h2 span {
+  color: #fb570b;
+}
+.signIn .signIn_container {
+  font-weight: bold;
+}
+.signIn .signIn_container .formGroup {
+  width: 90%;
+  margin: 0 auto;
+}
+.signIn .signIn_container .formCheck {
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.signIn .signIn_container .form-control {
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+.signIn .signIn_container .signIn_wrapper {
+  text-align: center;
+}
+.signIn .signIn_container .signIn_wrapper button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  color: white;
+}
+.signIn .signIn_container .signIn_wrapper .btn-SignIn {
+  background-color: #fb570b;
+  width: 90%;
+  margin: 20px auto;
+  margin-bottom: 30px;
+}
+.signIn .signIn_container .signIn_wrapper .btn-SignIn:hover {
+  background-color: hsl(19deg, 97%, 58%);
+}
+.signIn .signIn_container .signIn_wrapper .btn-FB {
+  display: flex;
+  justify-content: center;
+  background-color: #3b5998;
+  width: 90%;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+.signIn .signIn_container .signIn_wrapper .btn-FB:hover {
+  background-color: hsl(221deg, 45%, 38%);
+}
+.signIn .signIn_container .signIn_wrapper .btn-Google {
+  display: flex;
+  justify-content: center;
+  background-color: #ff5050;
+  width: 90%;
+  margin: 10px auto;
+  margin: 0 auto;
+}
+.signIn .signIn_container .signIn_wrapper .btn-Google:hover {
+  background-color: hsl(0deg, 71%, 57%);
+}
+.signIn .signIn_container .signIn_wrapper .signIn_wrap {
+  margin: 10px;
+  padding-bottom: 20px;
+}
+.signIn .signIn_container .signIn_wrapper .signIn_wrap a {
+  color: #000000;
+  text-decoration: none;
+}
+.signIn .signIn_container .signIn_wrapper .signIn_wrap a:hover {
+  color: #fb570b;
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+  .signIn {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 960px) {
+  .signIn {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1200px) {
+  .signIn {
+    width: 60%;
+  }
+}/*# sourceMappingURL=signIn.css.map */

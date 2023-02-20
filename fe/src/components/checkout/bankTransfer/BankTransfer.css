@@ -1,0 +1,80 @@
+.bank-transfer {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 100px;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer {
+    padding: 20px;
+  }
+}
+.bank-transfer .topTransfer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .topTransfer {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.bank-transfer .Transferline {
+  width: 40px;
+  height: 600px;
+  border-right: 1px solid #c3c7cf;
+  margin-right: 48px;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .Transferline {
+    height: 0px;
+    display: none;
+  }
+}
+.bank-transfer .leftTransfer .order-price {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .leftTransfer .order-price {
+    margin-bottom: 1rem;
+  }
+}
+.bank-transfer .leftTransfer .payment-method {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .leftTransfer .payment-method {
+    margin-bottom: 1rem;
+  }
+}
+.bank-transfer .leftTransfer .payment-info {
+  margin-bottom: 2rem;
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .leftTransfer .payment-info {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .right-transfer .uploadBTN {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .bank-transfer .right-transfer .uploadBTN .uploadBtnText {
+    word-wrap: break-word;
+  }
+}
+.bank-transfer .right-transfer Button {
+  width: auto;
+  height: auto;
+}
+.bank-transfer .right-transfer .transfer-time {
+  width: 100%;
+}
+.bank-transfer .right-transfer .transfer-time .date {
+  width: 100%;
+}
+.bank-transfer .right-transfer .transfer-time .send {
+  width: 90%;
+}/*# sourceMappingURL=BankTransfer.css.map */

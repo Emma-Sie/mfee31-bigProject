@@ -1,0 +1,234 @@
+$orange1: #FB570B;
+$orange2: #FC8F05;
+$main-color: #fb570b;
+$sub-color: #fc8f05;
+$gray-color: #c3c7cf;
+
+.titleCollect {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 30px;
+    .titleContent {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        text-align: center;
+      }
+      .titleFirst {
+        color: $main-color;
+      }
+    }
+  }
+  .Nav-title {
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .tableFrameCollect {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-bottom: 60px;
+    .tableLeft {
+        width: 20%;
+        display: flex;
+        align-content: center;
+        padding-top: 100px;
+        ul {
+          list-style: none;
+          padding: 0px;
+          li {
+            margin-bottom: 40px;
+            .btnLink {
+              padding: 15px 20px;
+              text-decoration: none;
+              border-radius: 10px;
+              font-weight: bold;
+              font-size: 20px;
+              color: hsla(0, 0%, 0%, 0.74);
+            }
+            .btnHover {
+              background-color: white;
+              &:hover {
+                background-color: $sub-color;
+              }
+            }
+          }
+        }
+      }
+    .tableRight {
+      width: 80%;
+      .collectCard {
+        width: 100%;
+        display: flex;
+        .collect_right {
+            width: 100%;
+            text-align: right;
+            .right_cards {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 10px;
+                .cards {
+                    margin-right:18px;
+                    width: 300px !important;
+                    .cardOutside {
+                        width: 100%;
+                        .cardImg {
+                          height: 14rem;
+                          cursor: pointer;
+                        }
+                        .cardTitle {
+                          font-weight: bold;
+                          font-size: 20px;
+                          text-align: center;
+                          text-overflow: ellipsis;
+                          height: 2.5rem;
+                          white-space: nowrap;
+                          overflow: hidden;
+                      }
+                      .btn1 {
+                        padding: 10px 20px;
+                        background-color: $sub-color;
+                        color: white;
+                        border: none;
+                        font-weight: bold;
+                        &:hover {
+                            background-color: hsl(34, 98%, 60%);
+                        }
+                    }
+                    h6 {
+                        font-weight: bold;
+                    }
+                    }
+                    
+                    
+                    .btn2 {
+                        border-radius: 10px;
+                        background-color: white;
+                        color: #CF3341;
+                        font-weight: bold;
+                        &:hover {
+                            background-color: #CF3341;
+                            color: white;
+                        }
+                    }
+                    .btn3 {
+                        border-radius: 10px;
+                        background-color: #CF3341;
+                        color: white;
+                        border: none;
+                        font-weight: bold;
+                        border: 1px solid transparent;
+                        &:hover {
+                        background-color: hsl(355, 62%, 44%);
+                        }
+                    }
+                }
+            }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 430px) and (max-width: 760px) {
+    .tableFrameCollect {
+        display: block !important;
+        .tableLeft {
+            width: 100% !important;
+            padding-top: 0px;
+            ul {
+              width: 100% !important;
+              display: grid !important;
+              grid-template-columns: repeat(3, 1fr) !important;
+              li {
+                .btnLink {
+                  padding: 5px 9px !important;
+                  font-size: 18px !important;
+                  background-color: white !important;
+                  &:hover {
+                    background-color: $sub-color !important;
+                  }
+                  .btnClick {
+                    background-color: $sub-color !important;
+                  }
+                }
+              }
+            }
+          }
+        .tableRight {
+        width: 100% !important;
+        .collectCard {
+            .collect_right {
+                .right_cards {
+                    display: block !important;
+                    .cards {
+                        margin: 0 auto;
+                        .cardOutside {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+  }
+  @media screen and (min-width: 760px) and (max-width: 1000px) {
+    .tableFrameCollect {
+        display: block !important;
+        .tableLeft {
+            width: 100% !important;
+            padding-top: 0px;
+            ul {
+              width: 100% !important;
+              display: grid !important;
+              grid-template-columns: repeat(4, 1fr) !important;
+              li {
+                .btnLink {
+                  padding: 5px 9px !important;
+                  font-size: 18px !important;
+                  background-color: white !important;
+                  &:hover {
+                    background-color: $sub-color !important;
+                  }
+                  .btnClick {
+                    background-color: $sub-color !important;
+                  }
+                }
+              }
+            }
+          }
+        .tableRight {
+        width: 100% !important;
+        .collectCard {
+            .collect_right {
+                .right_cards {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr) !important;
+                    grid-gap: 15px !important;
+                    .cards {
+                        margin: 0 auto;
+                        .cardOutside {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+  }
+  @media screen and (min-width: 1000px) and (max-width: 1500px) {
+    .right_cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important;
+        grid-gap: 15px !important;
+        .cards {
+            margin: 0 auto;
+            .cardOutside {
+                width: 100%;
+            }
+        }
+    }
+  }

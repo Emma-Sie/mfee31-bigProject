@@ -1,0 +1,314 @@
+$main-color: #FB570B;
+$sub-color: #FC8F05;
+$gray-color: #C3C7CF;
+
+.title {
+    width: 20%;
+    margin: 0 auto;
+    justify-content: center;
+
+    .titleFirst {
+        color: $main-color;
+    }
+}
+
+.Nav-title {
+    padding-bottom: 40px;
+    width: 80%;
+    margin: 0 auto;
+    font-size: 15px;
+
+    .detailPath {
+        .homeIcon {
+            font-size: 22px;
+        }
+
+        .verifySeller {
+            color: $main-color;
+        }
+    }
+}
+
+.tableFrame {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+    padding-bottom: 60px;
+
+    .tableLeft {
+        width: 20%;
+    }
+
+    .tableRight {
+        width: 80%;
+
+        .verifySellerInfo {
+            width: 60%;
+            margin: 0 auto;
+
+            .inputChanging {
+                font-size: 22px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.701);
+                display: flex;
+
+                label {
+                    padding: 10px;
+                    width: 30%;
+                    text-align: center;
+                    align-self: center;
+                    white-space:nowrap;
+                    overflow: hidden;
+                }
+
+                .inputWord {
+                    padding: 10px;
+                    width: 80%;
+                    margin: 20px;
+                }
+
+                .btnVerify {
+                    background-color: #CF3341;
+                    border-color: #CF3341;
+                    border-radius: 10px;
+                    color: #fff;
+                    width: 100%;
+                    line-height: 40px;
+                    font-weight: bold;
+                    margin: 10px;
+                }
+            }
+
+            .btnGroups {
+                align-items: center;
+
+                .btnYes {
+                    background-color: $sub-color;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-left: 20px;
+                }
+
+                .btnNo {
+                    background-color: $gray-color;
+                    padding: 10px 20px;
+                    border-radius: 15px;
+                    margin-left: 20px;
+                }
+            }
+        }
+
+        .profileStatus {
+            width: 40%;
+            margin: 0 auto;
+            padding-top: 30px !important;
+
+            .profilePhoto {
+                width: 170px;
+                height: 170px;
+                border-radius: 50%;
+                border: 2px solid $sub-color;
+                margin: 0 auto;
+                overflow: hidden;
+
+                .profileImage {
+                    width: 170px;
+                    height: 170px;
+                }
+            }
+
+            .profileName {
+                font-size: 40px;
+                color: rgba(0, 0, 0, 0.719);
+                text-align: center;
+                padding: 30px;
+                font-weight: bold;
+            }
+
+            .authorityStatus {
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.719);
+                text-align: center;
+                padding-bottom: 40px;
+                font-weight: bold;
+            }
+
+            .btns {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                .btnComplete {
+                    background-color: $main-color;
+                    border-radius: 10px;
+                    width: 150px;
+                    font-size: 20px;
+                    margin-bottom: 25px;
+                }
+
+                .photoUpload {
+                    background-color: $sub-color;
+                    border-radius: 10px;
+                    width: 150px;
+                    font-size: 20px;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+    .title {
+        width: 70% !important;
+    }
+
+    .tableFrame {
+        display: block !important;
+
+        .tableLeft {
+            width: 100% !important;
+
+            ul {
+                width: 100% !important;
+                display: grid !important;
+                grid-template-columns: repeat(3, 1fr) !important;
+
+                li {
+
+                    .btnLink {
+                        padding: 5px 9px !important;
+                        font-size: 18px !important;
+                        background-color: white !important;
+
+                        &:hover {
+                            background-color: $sub-color !important;
+                        }
+
+                        .btnClick {
+                            background-color: $sub-color !important;
+                        }
+                    }
+                }
+            }
+        }
+
+        .tableRight {
+            display: block !important;
+
+            .profilePhoto {
+                margin-left: -10px !important;
+            }
+
+            .profileName {
+                // word-wrap: break-word !important;
+                white-space: nowrap !important;
+                font-size: 30px !important;
+                padding: 30px 30px 30px 15px !important;
+            }
+
+            .verifySellerInfo {
+                width: 100% !important;
+
+                .inputChanging {
+                    width: 100% !important;
+
+                    label {
+                        width: 50% !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 651px) and (max-width: 885px) {
+    .title {
+        width: 70% !important;
+    }
+
+        .tableFrame {
+            display: block !important;
+
+            .tableLeft {
+                width: 100% !important;
+                padding-top: 0px !important;
+
+                ul {
+                    width: 100% !important;
+                    display: grid !important;
+                    grid-template-columns: repeat(3, 1fr) !important;
+
+                    li {
+                        .btnLink {
+                            padding: 5px 9px !important;
+                            font-size: 20px !important;
+                            background-color: white !important;
+
+                            &:hover {
+                              background-color: $sub-color !important;
+                            }
+
+                            .btnClick {
+                              background-color: $sub-color !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .tableRight {
+                display: block !important;
+
+                .profileName {
+                    // word-wrap: break-word !important;
+                    white-space: nowrap !important;
+                    font-size: 30px !important;
+                }
+
+                .verifySellerInfo {
+                    width: 100% !important;
+
+                    .inputChanging {
+                        width: 100% !important;
+
+                        label {
+                            width: 50% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+@media screen and (min-width: 886px) and (max-width: 1200px) {
+    .tableFrame {
+        .tableRight {
+            .profileName {
+                font-size: 35px !important;
+            }
+
+            .inputChanging {
+                width: 100% !important;
+                // font-size: 20px !important;
+
+                label {
+                    width: 50% !important;
+                    font-size: 20px !important;
+                }
+
+                .inputWord {
+                    width: 50% !important;
+                }
+
+                // .account {
+
+                // }
+
+                // .btnVerify {
+                //     font-size: 18px !important;
+                // }
+            }
+        }
+    }
+}

@@ -1,0 +1,323 @@
+.title {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.title .titleFirst {
+  color: #fb570b;
+}
+
+.Nav-title {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tableFrameProfile {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 60px;
+}
+.tableFrameProfile .tableLeft {
+  width: 20%;
+  display: flex;
+  align-content: center;
+  padding-top: 100px;
+}
+.tableFrameProfile .tableLeft ul {
+  list-style: none;
+  padding: 0px;
+}
+.tableFrameProfile .tableLeft ul li {
+  margin-bottom: 40px;
+}
+.tableFrameProfile .tableLeft ul li .btnLink {
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: hsla(0deg, 0%, 0%, 0.74);
+}
+.tableFrameProfile .tableLeft ul li .btnHover {
+  background-color: white;
+}
+.tableFrameProfile .tableLeft ul li .btnHover:hover {
+  background-color: #fc8f05;
+}
+.tableFrameProfile .tableRight {
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.1529411765);
+}
+.tableFrameProfile .tableRight .profileInfo {
+  width: 70% !important;
+  height: 100%;
+  margin: 0 auto;
+  padding-top: 0px !important;
+}
+.tableFrameProfile .tableRight .profileInfo .inputChanging {
+  font-size: 22px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.701);
+  display: flex;
+}
+.tableFrameProfile .tableRight .profileInfo .inputChanging label {
+  padding: 10px;
+  width: 30%;
+  text-align: start;
+  padding-left: 30px;
+  align-self: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tableFrameProfile .tableRight .profileInfo .inputChanging .inputWord {
+  padding: 10px;
+  width: 70%;
+  margin: 20px;
+}
+.tableFrameProfile .tableRight .profileInfo .inputChanging .input {
+  margin: 10px;
+  width: 70%;
+  margin: 20px;
+  border-radius: 5px;
+}
+.tableFrameProfile .tableRight .profileInfo .inputEditing {
+  width: 60%;
+  margin: 0 auto;
+  height: 80px;
+  display: flex;
+  align-items: flex-end;
+}
+.tableFrameProfile .tableRight .profileInfo .btnGroups {
+  align-items: center;
+}
+.tableFrameProfile .tableRight .profileInfo .btnGroups .btnYes {
+  background-color: #fc8f05;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+.tableFrameProfile .tableRight .profileInfo .btnGroups .btnNo {
+  background-color: #c3c7cf;
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+}
+.tableFrameProfile .tableRight .profileStatus {
+  width: 30% !important;
+  margin: 0 auto;
+  padding-top: 20px !important;
+  border-right: 1px solid rgba(0, 0, 0, 0.1529411765);
+}
+.tableFrameProfile .tableRight .profileStatus .profilePhoto {
+  margin-top: 20px;
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 2px solid #fc8f05;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.tableFrameProfile .tableRight .profileStatus .profilePhoto .profileImage {
+  width: 170px;
+  height: 170px;
+}
+.tableFrameProfile .tableRight .profileStatus .profileName {
+  font-size: 40px;
+  color: rgba(0, 0, 0, 0.719);
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+}
+.tableFrameProfile .tableRight .profileStatus .authorityStatus {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.719);
+  text-align: center;
+  font-weight: bold;
+}
+.tableFrameProfile .tableRight .profileStatus .authorityStatus .verifyBtn {
+  margin-top: 20px;
+  border: 0;
+  padding: 5px;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.tableFrameProfile .tableRight .profileStatus .btns {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.tableFrameProfile .tableRight .profileStatus .btns .profileBtn {
+  background-color: #fb570b;
+  border: 0;
+  padding: 5px;
+  border: 1px solid #fb570b;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.tableFrameProfile .tableRight .profileStatus .btns .profileBtn:hover {
+  background-color: hsl(19deg, 100%, 60%);
+  border: 1px solid hsl(19deg, 100%, 60%);
+}
+.tableFrameProfile .tableRight .profileStatus .btns .photoUpload {
+  background-color: #fc8f05;
+  border-radius: 10px;
+  width: 150px;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+  .title {
+    width: 70% !important;
+  }
+  .tableFrameProfile {
+    display: block !important;
+  }
+  .tableFrameProfile .tableLeft {
+    width: 100% !important;
+  }
+  .tableFrameProfile .tableLeft ul {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink {
+    padding: 5px 9px !important;
+    font-size: 18px !important;
+    background-color: white !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink:hover {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink .btnClick {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameProfile .tableRight {
+    display: block !important;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .tableFrameProfile .tableRight .profileStatus {
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1529411765);
+  }
+  .tableFrameProfile .tableRight .profileName {
+    font-size: 30px !important;
+    padding: 30px 30px 30px 15px !important;
+  }
+  .tableFrameProfile .tableRight .authorityStatus {
+    white-space: nowrap;
+    font-size: 14px !important;
+  }
+  .tableFrameProfile .tableRight .profileInfo {
+    width: 100% !important;
+    padding-bottom: 20px;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging {
+    width: 100%;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging label {
+    width: 50% !important;
+    font-size: 14px !important;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging .inputWord {
+    width: 40% !important;
+    white-space: nowrap;
+    font-size: 14px !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 885px) {
+  .title {
+    width: 70% !important;
+  }
+  .tableFrameProfile {
+    display: block !important;
+  }
+  .tableFrameProfile .tableLeft {
+    width: 100% !important;
+    padding-top: 0px !important;
+  }
+  .tableFrameProfile .tableLeft ul {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink {
+    padding: 5px 9px !important;
+    font-size: 20px !important;
+    background-color: white !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink:hover {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameProfile .tableLeft ul li .btnLink .btnClick {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameProfile .tableRight {
+    display: block !important;
+    width: 95%;
+    margin: 0 auto;
+  }
+  .tableFrameProfile .tableRight .profileStatus {
+    width: 100% !important;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1529411765);
+  }
+  .tableFrameProfile .tableRight .profileName {
+    word-wrap: break-word !important;
+    font-size: 35px !important;
+  }
+  .tableFrameProfile .tableRight .authorityStatus {
+    font-size: 16px !important;
+  }
+  .tableFrameProfile .tableRight .profileInfo {
+    width: 100% !important;
+    padding-bottom: 20px;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging {
+    width: 100% !important;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging label {
+    width: 50% !important;
+    font-size: 19px !important;
+  }
+  .tableFrameProfile .tableRight .profileInfo .inputChanging .inputWord {
+    width: 40% !important;
+    white-space: nowrap !important;
+    font-size: 18px !important;
+  }
+}
+@media screen and (min-width: 886px) and (max-width: 1200px) {
+  .tableFrameProfile .tableRight .profileName {
+    font-size: 35px !important;
+  }
+  .tableFrameProfile .tableRight .authorityStatus {
+    font-size: 18px !important;
+  }
+  .tableFrameProfile .tableRight .btns button {
+    font-size: 18px !important;
+  }
+  .tableFrameProfile .tableRight .inputChanging {
+    width: 90% !important;
+    font-size: 20px !important;
+  }
+  .tableFrameProfile .tableRight .inputChanging label {
+    width: 50% !important;
+    font-size: 20px !important;
+  }
+  .tableFrameProfile .tableRight .inputChanging .inputWord {
+    width: 40% !important;
+    white-space: nowrap !important;
+    font-size: 20px !important;
+  }
+}/*# sourceMappingURL=profile.css.map */

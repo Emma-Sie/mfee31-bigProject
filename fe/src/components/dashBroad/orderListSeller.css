@@ -1,0 +1,649 @@
+.btnGroup {
+  display: grid;
+  width: 400px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 7px;
+}
+.btnGroup .btnFirst {
+  padding: 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  border: 1px solid #FC8F05;
+  background-color: #FC8F05;
+  font-weight: bold;
+  color: white;
+}
+.btnGroup .btnFirst:hover {
+  background-color: hwb(34 9% 0%);
+}
+.btnGroup .btnSecond {
+  padding: 5px;
+  font-size: 10px;
+  border-radius: 0;
+  border: 1px solid #C3C7CF;
+  background-color: #C3C7CF;
+  font-weight: bold;
+  color: white;
+}
+.btnGroup .btnSecond:hover {
+  background-color: hsl(222deg, 8%, 74%);
+}
+
+.inputs {
+  display: flex;
+  justify-content: end;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.inputs .inputGroup {
+  display: flex;
+  width: 380px;
+}
+.inputs .inputGroup .inputSearch {
+  width: 300px;
+  border-radius: 5px 0 0 5px;
+}
+.inputs .inputGroup .btnSearch {
+  border-radius: 0 5px 5px 0;
+  width: 80px;
+  height: 40px;
+  font-weight: bold;
+  color: white;
+  background-color: #FB570B;
+}
+.inputs .inputGroup .btnSearch:hover {
+  background-color: hsl(19deg, 91%, 50%);
+  color: white;
+}
+
+.tableSeller {
+  width: 100%;
+  table-layout: fixed;
+}
+.tableSeller .tableHead {
+  width: 100%;
+}
+.tableSeller .tableHead tr {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+  font-size: 20px !important;
+}
+.tableSeller .tableHead tr th {
+  color: black;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.482);
+  text-align: center;
+  font-size: 20px;
+}
+.tableSeller .tableBodySeller td {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.482);
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px 5px;
+}
+.tableSeller .tableBodySeller td .buttonDetail {
+  background: #FC8F05;
+  border: 1px solid #FC8F05;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+.tableSeller .tableBodySeller td .buttonDetail:hover {
+  background: hsl(34deg, 95%, 59%);
+  border: 1px solid hsl(34deg, 95%, 59%);
+}
+
+.custoInfo {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(195, 199, 207, 0.3882352941);
+  padding: 10px;
+}
+.custoInfo h2 {
+  color: hsla(0deg, 0%, 0%, 0.772);
+  text-align: left;
+  font-weight: bold;
+}
+
+.sellerTableBody .imageWords {
+  margin-left: 20px;
+}
+
+.subtotal {
+  display: flex;
+  justify-content: end;
+  margin: 0;
+}
+.subtotal ul {
+  width: 400px;
+  font-size: 20px;
+  font-weight: bold;
+  list-style-type: none;
+  color: hsla(0deg, 0%, 0%, 0.559);
+}
+.subtotal ul li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Coupon {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.326);
+  font-size: 20px;
+  color: hsla(0deg, 0%, 0%, 0.559);
+  font-weight: bold;
+}
+.Coupon .couponSticker {
+  padding: 10px 15px;
+  text-align: center;
+  background-color: #FB570B;
+  color: white;
+  font-weight: bold;
+}
+
+.underBoxSellersDetail {
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  border: 2px solid #C3C7CF;
+}
+.underBoxSellersDetail .FirstBox {
+  display: flex;
+  width: 100%;
+}
+.underBoxSellersDetail .FirstBox .btnDeli {
+  width: 150px;
+  height: 45px;
+  margin-left: 20px;
+  background-color: white;
+  border: 2px solid #FB570B;
+  color: #FB570B;
+}
+.underBoxSellersDetail .FirstBox .boxes {
+  width: 50%;
+}
+.underBoxSellersDetail .FirstBox .btnBuyers {
+  background-color: #FB570B;
+  font-weight: bold;
+  color: white;
+}
+.underBoxSellersDetail .FirstBox .btnBuyers:hover {
+  background: hsl(19deg, 99%, 57%);
+}
+.underBoxSellersDetail .orderInfo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.underBoxSellersDetail .contentInfo, .underBoxSellersDetail p {
+  line-height: 25px;
+  margin-left: 20px;
+  font-size: 20px;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.underBoxSellersDetail .contentInfo .sevenEleven, .underBoxSellersDetail p .sevenEleven {
+  width: 160px;
+  height: 40px;
+  font-weight: bold;
+  background-color: black;
+  padding: 0;
+  border-radius: 10px;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.underBoxSellersDetail .contentInfo .sevenEleven:hover, .underBoxSellersDetail p .sevenEleven:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.underBoxSellersDetail .contentInfo input, .underBoxSellersDetail p input {
+  margin: 5px 10px;
+  height: 40px;
+}
+
+.btnGroup .btnClose {
+  color: white;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+
+.underSecondBox {
+  width: 100%;
+  border: 2px solid #C3C7CF;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.underSecondBox .commentsTitle {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bolder;
+}
+
+.paginationUl {
+  margin-top: 30px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  align-content: center;
+}
+
+.tableDetail th {
+  color: hsla(0deg, 0%, 0%, 0.772);
+  font-size: 20px;
+}
+.tableDetail td {
+  color: hsla(0deg, 0%, 0%, 0.559);
+  font-size: 20px;
+}
+.tableDetail .productInfo {
+  width: 40%;
+  text-align: start !important;
+}
+.tableDetail .productInfo .imageWords {
+  height: 150px;
+  width: 100%;
+}
+
+@media screen and (min-width: 430px) and (max-width: 678px) {
+  .btnGroup {
+    width: 100%;
+    grid-column-gap: 3px;
+  }
+  .btnGroup .btnFirst {
+    padding: 1px;
+    font-size: 8px;
+  }
+  .btnGroup .btnSecond {
+    padding: 1px;
+    font-size: 8px;
+  }
+  .inputs {
+    justify-content: center !important;
+  }
+  .inputs .inputGroup {
+    width: 330px !important;
+  }
+  .inputs .inputGroup .inputSearch {
+    width: 80% !important;
+    font-size: 10px;
+  }
+  .inputs .inputGroup .btnSearch {
+    font-size: 10px;
+    width: 20% !important;
+    height: 40px;
+  }
+  .tableHead tr th {
+    font-size: 10px !important;
+  }
+  .tableHead tr .tableHide {
+    display: none;
+  }
+  .tableBodySeller tr td {
+    font-size: 13px !important;
+    padding: 10px 3px !important;
+  }
+  .tableBodySeller tr td .buttonDetail {
+    background: #FC8F05;
+    border: 1px solid #FC8F05;
+    color: white;
+    font-weight: bold;
+    font-size: 13px !important;
+    padding: 4px 6px !important;
+  }
+  .tableBodySeller tr .tableHide {
+    display: none !important;
+  }
+  .paginationUl {
+    justify-content: center !important;
+  }
+  .custoInfo {
+    margin-bottom: 15px;
+  }
+  .tableDetail th {
+    font-size: 17px !important;
+  }
+  .tableDetail tr td {
+    font-size: 17px !important;
+  }
+  .tableDetail tr td .imageWords {
+    height: 70px !important;
+    width: 60%;
+  }
+  .tableDetail .productNone {
+    display: none;
+  }
+  .Coupon {
+    font-size: 17px !important;
+  }
+  .Coupon .couponSticker {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .subtotal {
+    display: block !important;
+    padding: 10px !important;
+  }
+  .subtotal ul {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  .subtotal ul li {
+    width: 100% !important;
+    padding: 6px !important;
+  }
+  .underBoxSellersDetail {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-bottom: 20px;
+  }
+  .underBoxSellersDetail .FirstBox {
+    display: block;
+    width: 100%;
+  }
+  .underBoxSellersDetail .FirstBox .btnDeli {
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 2px solid #FB570B;
+    color: #FB570B;
+  }
+  .underBoxSellersDetail .FirstBox .boxes {
+    width: 100%;
+  }
+  .underBoxSellersDetail .orderInfo {
+    font-size: 16px;
+    padding: 15px !important;
+    margin: 0 !important;
+  }
+  .underBoxSellersDetail .contentInfo {
+    line-height: 15px;
+    padding-right: 40px !important;
+    font-size: 15px;
+    padding-bottom: 0;
+  }
+  .underBoxSellersDetail .contentInfo .content {
+    justify-content: space-between;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentInside {
+    line-height: 15px !important;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentPay {
+    display: flex;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside .btnComplete {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 678px) and (max-width: 1000px) {
+  .btnGroup {
+    width: 60%;
+    grid-column-gap: 3px;
+  }
+  .btnGroup .btnFirst {
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+  .btnGroup .btnSecond {
+    padding: 5px !important;
+    font-size: 10px;
+  }
+  .inputs {
+    justify-content: end !important;
+  }
+  .inputs .inputGroup {
+    width: 380px !important;
+  }
+  .inputs .inputGroup .inputSearch {
+    width: 80% !important;
+    font-size: 10px;
+  }
+  .inputs .inputGroup .btnSearch {
+    font-size: 10px;
+    width: 20% !important;
+    height: 40px;
+  }
+  .tableHead tr th {
+    font-size: 15px !important;
+  }
+  .tableHead tr .tableHide {
+    display: none !important;
+  }
+  .tableBodySeller td {
+    font-size: 15px !important;
+    padding: 10px 3px !important;
+  }
+  .tableBodySeller td .buttonDetail {
+    background: #FC8F05;
+    border: 1px solid #FC8F05;
+    color: white;
+    font-weight: bold;
+    font-size: 10px !important;
+    padding: 5px 7px;
+  }
+  .tableBodySeller .tableHide {
+    display: none !important;
+  }
+  .tableDetail th {
+    font-size: 17px !important;
+  }
+  .tableDetail tr td {
+    font-size: 17px !important;
+  }
+  .tableDetail tr td .imageWords {
+    height: 70px !important;
+    width: 60%;
+  }
+  .tableDetail .productNone {
+    display: none;
+  }
+  .Coupon {
+    font-size: 15px !important;
+  }
+  .Coupon .couponSticker {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .subtotal {
+    display: block !important;
+    padding: 10px !important;
+  }
+  .subtotal ul {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  .subtotal ul li {
+    width: 100% !important;
+    padding: 6px !important;
+  }
+  .paginationUl {
+    justify-content: center !important;
+  }
+  .underBoxSellersDetail {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-bottom: 20px;
+  }
+  .underBoxSellersDetail .FirstBox {
+    display: block;
+    width: 100%;
+  }
+  .underBoxSellersDetail .FirstBox .btnDeli {
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 2px solid #FB570B;
+    color: #FB570B;
+  }
+  .underBoxSellersDetail .FirstBox .boxes {
+    width: 100%;
+  }
+  .underBoxSellersDetail .orderInfo {
+    font-size: 16px;
+    padding: 15px !important;
+    margin: 0 !important;
+  }
+  .underBoxSellersDetail .contentInfo {
+    line-height: 15px;
+    padding-right: 40px !important;
+    font-size: 15px;
+    padding-bottom: 0;
+  }
+  .underBoxSellersDetail .contentInfo .content {
+    justify-content: space-between;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentInside {
+    line-height: 15px !important;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentPay {
+    display: flex;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside .btnComplete {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .btnGroup {
+    width: 400px;
+  }
+  .inputs {
+    justify-content: end !important;
+  }
+  .inputs .inputGroup {
+    width: 380px !important;
+  }
+  .inputs .inputGroup .inputSearch {
+    width: 80% !important;
+    font-size: 13px;
+  }
+  .inputs .inputGroup .btnSearch {
+    font-size: 13px;
+    width: 20% !important;
+    height: 40px;
+  }
+  .tableHead tr th {
+    font-size: 15px !important;
+  }
+  .tableBodySeller td {
+    font-size: 15px !important;
+    padding: 10px 3px !important;
+  }
+  .tableBodySeller td .buttonDetail {
+    background: #FC8F05;
+    border: 1px solid #FC8F05;
+    color: white;
+    font-weight: bold;
+    font-size: 15px !important;
+    padding: 5px 7px;
+  }
+  .tableDetail tr th {
+    font-size: 15px !important;
+  }
+  .tableDetail tr td {
+    font-size: 15px !important;
+    padding: 10px 3px !important;
+  }
+  .tableDetail tr td .buttonDetail {
+    background: #FC8F05;
+    border: 1px solid #FC8F05;
+    color: white;
+    font-weight: bold;
+    font-size: 10px !important;
+    padding: 5px 7px;
+  }
+  .Coupon {
+    font-size: 15px !important;
+  }
+  .Coupon .couponSticker {
+    padding: 10px 10px;
+    font-weight: bold;
+    font-size: 10px;
+  }
+  .subtotal {
+    display: block !important;
+    padding: 10px !important;
+  }
+  .subtotal ul {
+    padding: 0;
+    margin: 0;
+    width: 100% !important;
+    font-size: 16px !important;
+  }
+  .subtotal ul li {
+    width: 100% !important;
+    padding: 6px !important;
+  }
+  .underBoxSellersDetail {
+    height: -moz-fit-content !important;
+    height: fit-content !important;
+    padding-bottom: 20px;
+  }
+  .underBoxSellersDetail .FirstBox {
+    display: block;
+    width: 100%;
+  }
+  .underBoxSellersDetail .FirstBox .btnDeli {
+    font-size: 10px;
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    background-color: white;
+    border: 2px solid #FB570B;
+    color: #FB570B;
+  }
+  .underBoxSellersDetail .FirstBox .boxes {
+    width: 100%;
+  }
+  .underBoxSellersDetail .orderInfo {
+    font-size: 22px;
+    padding: 15px !important;
+    margin: 0 !important;
+  }
+  .underBoxSellersDetail .contentInfo {
+    line-height: 20px;
+    padding-right: 40px !important;
+    font-size: 19px;
+    padding-bottom: 0;
+  }
+  .underBoxSellersDetail .contentInfo .content {
+    justify-content: space-between;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentInside {
+    line-height: 15px !important;
+  }
+  .underBoxSellersDetail .contentInfo .content .contentPay {
+    display: flex;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10px;
+  }
+  .underBoxSellersDetail .contentInfo .completedOutside .btnComplete {
+    font-size: 10px;
+  }
+  .paginationUl {
+    justify-content: flex-end !important;
+  }
+}/*# sourceMappingURL=orderListSeller.css.map */

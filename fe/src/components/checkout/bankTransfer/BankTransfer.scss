@@ -1,0 +1,73 @@
+.bank-transfer {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 100px;
+  @media screen and (max-width: 540px) {
+    padding: 20px;
+  }
+  .topTransfer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    @media screen and (max-width: 540px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .Transferline {
+    width: 40px;
+    height: 600px;
+    border-right: 1px solid #c3c7cf;
+    margin-right: 48px;
+    @media screen and (max-width: 540px) {
+      height: 0px;
+      display: none;
+    }
+  }
+  .leftTransfer{
+    .order-price{
+      margin-bottom: 2rem;
+      @media screen and (max-width: 540px) {
+        margin-bottom: 1rem;
+      }
+    }
+    .payment-method{
+      margin-bottom: 2rem;
+      @media screen and (max-width: 540px) {
+        margin-bottom: 1rem;
+      }
+    }
+    .payment-info{
+      margin-bottom: 2rem;
+      @media screen and (max-width: 540px) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .right-transfer {
+    .uploadBTN{
+      @media screen and (max-width: 540px) {
+        width: 100%;
+      }
+      .uploadBtnText{
+        @media screen and (max-width: 540px) {
+          word-wrap: break-word;
+        }
+      }
+    }
+    
+    Button {
+      width: auto;
+      height: auto;
+    }
+    .transfer-time {
+      width: 100%;
+      .date {
+        width: 100%;
+      }
+      .send {
+        width: 90%;
+      }
+    }
+  }
+}

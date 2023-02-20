@@ -1,0 +1,469 @@
+.upperBoxOutside2 {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid #fc8f05;
+  border-radius: 20px;
+  margin-top: 30px;
+  background-color: black;
+  height: 300px;
+  overflow: hidden;
+}
+.upperBoxOutside2 .carouselProduct {
+  width: 100%;
+  background-size: contain;
+}
+.upperBoxOutside2 .carouselProduct .CarouselPage {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cateGory {
+  width: 70%;
+  margin: 40px auto;
+}
+.cateGory .mySwiperSmall {
+  display: none;
+}
+.cateGory .box {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border: none !important;
+  background-color: white;
+}
+.cateGory .box .boxImg {
+  width: 100%;
+}
+.cateGory .box:hover {
+  width: 220px;
+}
+
+.btnApply {
+  width: 6rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #fb570b;
+  background-color: #fb570b;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+.btnApply:hover {
+  border: 1px solid hwb(19 17% 5%);
+  background-color: hwb(19 17% 5%);
+}
+
+.displayFilter {
+  display: none;
+}
+
+.cardOutside {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.cardOutside .card-shadow-hover {
+  width: 300px !important;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.cardOutside .card-shadow-hover:hover {
+  box-shadow: 8px 8px 8px 8px rgba(212, 208, 208, 0.671);
+}
+.cardOutside .card-shadow-hover .shadow {
+  border-radius: 15px;
+}
+.cardOutside .card-shadow-hover .shadow .cardImg {
+  height: 14rem;
+  cursor: pointer;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody {
+  background-color: rgba(195, 199, 207, 0.3490196078);
+  padding: 20px;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardTitle {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  height: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 10px;
+  display: flex;
+  align-items: center;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap .text-light {
+  border: 1px solid #fc8f05;
+  background-color: #fc8f05;
+  color: white;
+  font-weight: bold;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap .text-light:hover {
+  border: 1px solid hsl(34deg, 94%, 59%);
+  background-color: hsl(34deg, 94%, 59%);
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap .contentWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap .contentWrap .price {
+  font-size: 1.5rem;
+  margin: 5px;
+}
+.cardOutside .card-shadow-hover .shadow .cardBody .cardWrap .contentWrap .amount {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 430px) and (max-width: 650px) {
+  .mySwiperSmall {
+    display: block !important;
+  }
+  .cateGory {
+    width: 95%;
+    margin: 40px auto;
+  }
+  .cateGory .mySwiperMain {
+    display: none;
+  }
+  .cateGory .box {
+    width: 110px;
+    height: 110px;
+    margin: 3px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none !important;
+    background-color: white;
+  }
+  .cateGory .box .boxImg {
+    width: 100%;
+  }
+  .cateGory .box:hover {
+    width: 120px;
+  }
+  .displayFilter {
+    display: block !important;
+  }
+  .displayFilter .upFilter {
+    display: flex;
+    justify-content: end;
+  }
+  .displayFilter .upFilter .btnChoose {
+    font-size: 13px;
+    background-color: #c3c7cf;
+    border: 1px solid #c3c7cf;
+    border-radius: 5px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+  }
+  .displayFilter .upFilter .btnChoose:hover {
+    color: white;
+    background-color: #fb570b;
+    border: 1px solid #fb570b;
+  }
+  .displayFilter .upFilter .btnCondition {
+    font-size: 13px;
+    background-color: #FFB800;
+    border: 1px solid #FFB800;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .displayFilter .upFilter .btnCondition:hover {
+    background-color: #fc8f05;
+    border: 1px solid #fc8f05;
+  }
+  .cardOutside {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  .cardOutside .card-shadow-hover {
+    width: 170px !important;
+  }
+  .cardOutside .card-shadow-hover .cardImg {
+    height: 7rem !important;
+    cursor: pointer;
+  }
+  .cardOutside .card-shadow-hover .cardBody {
+    padding: 10px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardTitle {
+    padding-top: 0 !important;
+    font-size: 15px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardText {
+    margin-bottom: 0;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .text-light {
+    font-size: 10px;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .price {
+    font-size: 1rem !important;
+    align-items: end !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .amount {
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 950px) {
+  .cateGory {
+    width: 85%;
+    margin: 40px auto;
+  }
+  .cateGory .mySwiperSmall {
+    display: none;
+  }
+  .cateGory .box {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none !important;
+    background-color: white;
+  }
+  .cateGory .box .boxImg {
+    width: 100%;
+  }
+  .cateGory .box:hover {
+    width: 220px;
+  }
+  .displayFilter {
+    display: block !important;
+  }
+  .displayFilter .upFilter {
+    display: flex;
+    justify-content: end;
+  }
+  .displayFilter .upFilter .btnChoose {
+    background-color: #c3c7cf;
+    border: 1px solid #c3c7cf;
+    border-radius: 5px;
+    margin: 5px;
+    color: black;
+    font-weight: bold;
+  }
+  .displayFilter .upFilter .btnChoose:hover {
+    color: white;
+    background-color: #fb570b;
+    border: 1px solid #fb570b;
+  }
+  .displayFilter .upFilter .btnCondition {
+    background-color: #FFB800;
+    border: 1px solid #FFB800;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    font-weight: bold;
+  }
+  .displayFilter .upFilter .btnCondition:hover {
+    background-color: #fc8f05;
+    border: 1px solid #fc8f05;
+  }
+  .cardOutside {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .cardOutside .card-shadow-hover {
+    width: 170px !important;
+  }
+  .cardOutside .card-shadow-hover .cardImg {
+    height: 7rem !important;
+    cursor: pointer;
+  }
+  .cardOutside .card-shadow-hover .cardBody {
+    padding: 10px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardTitle {
+    padding-top: 0 !important;
+    font-size: 15px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardText {
+    margin-bottom: 0;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .text-light {
+    font-size: 13px;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .price {
+    font-size: 1rem !important;
+    align-items: end !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .amount {
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  .cateGory {
+    width: 85%;
+    margin: 40px auto;
+  }
+  .cateGory .mySwiperSmall {
+    display: none;
+  }
+  .cateGory .box {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none !important;
+    background-color: white;
+  }
+  .cateGory .box .boxImg {
+    width: 100%;
+  }
+  .cateGory .box:hover {
+    width: 220px;
+  }
+  .displayFilter {
+    display: none;
+  }
+  .cardOutside {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .cardOutside .card-shadow-hover {
+    width: 200px !important;
+  }
+  .cardOutside .card-shadow-hover .cardImg {
+    height: 10rem !important;
+    cursor: pointer;
+  }
+  .cardOutside .card-shadow-hover .cardBody {
+    padding: 10px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardTitle {
+    padding-top: 0 !important;
+    font-size: 15px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardText {
+    margin-bottom: 0;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .text-light {
+    font-size: 14px;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .price {
+    font-size: 1.5rem !important;
+    align-items: end !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardWrap .contentWrap .amount {
+    font-size: 0.5rem !important;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1300px) {
+  .cateGory {
+    width: 85%;
+    margin: 40px auto;
+  }
+  .cateGory .mySwiperSmall {
+    display: none;
+  }
+  .cateGory .box {
+    width: 130px;
+    height: 130px;
+    margin: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none !important;
+    background-color: white;
+  }
+  .cateGory .box .boxImg {
+    width: 100%;
+  }
+  .cateGory .box:hover {
+    width: 220px;
+  }
+  .displayFilter {
+    display: none;
+  }
+  .cardOutside {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .cardOutside .card-shadow-hover {
+    width: 250px !important;
+  }
+  .cardOutside .card-shadow-hover .cardImg {
+    height: 12rem !important;
+    cursor: pointer;
+  }
+  .cardOutside .card-shadow-hover .cardBody {
+    padding: 10px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardTitle {
+    padding-top: 0 !important;
+    font-size: 15px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardText {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1300px) and (max-width: 1530px) {
+  .cateGory {
+    width: 85%;
+    margin: 40px auto;
+  }
+  .cateGory .mySwiperSmall {
+    display: none;
+  }
+  .cateGory .box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    -o-object-fit: contain;
+       object-fit: contain;
+    border: none !important;
+    background-color: white;
+  }
+  .cateGory .box .boxImg {
+    width: 100%;
+  }
+  .cateGory .box:hover {
+    width: 220px;
+  }
+  .displayFilter {
+    display: none;
+  }
+  .cardOutside {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  .cardOutside .card-shadow-hover {
+    width: 300px !important;
+  }
+  .cardOutside .card-shadow-hover .cardImg {
+    height: 14rem !important;
+    cursor: pointer;
+  }
+  .cardOutside .card-shadow-hover .cardBody {
+    padding: 10px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardTitle {
+    padding-top: 0 !important;
+    font-size: 20px !important;
+  }
+  .cardOutside .card-shadow-hover .cardBody .cardText {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 950px) {
+  .sidebar {
+    display: none;
+  }
+  .upperBoxOutside2 {
+    display: none;
+  }
+}/*# sourceMappingURL=products.css.map */

@@ -1,0 +1,217 @@
+.titleCollect {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.titleCollect .titleContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titleCollect .titleContent h2 {
+  text-align: center;
+}
+.titleCollect .titleContent .titleFirst {
+  color: #fb570b;
+}
+
+.Nav-title {
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tableFrameCollect {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px 0;
+  padding-bottom: 60px;
+}
+.tableFrameCollect .tableLeft {
+  width: 20%;
+  display: flex;
+  align-content: center;
+  padding-top: 100px;
+}
+.tableFrameCollect .tableLeft ul {
+  list-style: none;
+  padding: 0px;
+}
+.tableFrameCollect .tableLeft ul li {
+  margin-bottom: 40px;
+}
+.tableFrameCollect .tableLeft ul li .btnLink {
+  padding: 15px 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: hsla(0deg, 0%, 0%, 0.74);
+}
+.tableFrameCollect .tableLeft ul li .btnHover {
+  background-color: white;
+}
+.tableFrameCollect .tableLeft ul li .btnHover:hover {
+  background-color: #fc8f05;
+}
+.tableFrameCollect .tableRight {
+  width: 80%;
+}
+.tableFrameCollect .tableRight .collectCard {
+  width: 100%;
+  display: flex;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right {
+  width: 100%;
+  text-align: right;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards {
+  margin-right: 18px;
+  width: 300px !important;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside {
+  width: 100%;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside .cardImg {
+  height: 14rem;
+  cursor: pointer;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside .cardTitle {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  text-overflow: ellipsis;
+  height: 2.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside .btn1 {
+  padding: 10px 20px;
+  background-color: #fc8f05;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside .btn1:hover {
+  background-color: hsl(34deg, 98%, 60%);
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside h6 {
+  font-weight: bold;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .btn2 {
+  border-radius: 10px;
+  background-color: white;
+  color: #CF3341;
+  font-weight: bold;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .btn2:hover {
+  background-color: #CF3341;
+  color: white;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .btn3 {
+  border-radius: 10px;
+  background-color: #CF3341;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border: 1px solid transparent;
+}
+.tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .btn3:hover {
+  background-color: hsl(355deg, 62%, 44%);
+}
+
+@media screen and (min-width: 430px) and (max-width: 760px) {
+  .tableFrameCollect {
+    display: block !important;
+  }
+  .tableFrameCollect .tableLeft {
+    width: 100% !important;
+    padding-top: 0px;
+  }
+  .tableFrameCollect .tableLeft ul {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink {
+    padding: 5px 9px !important;
+    font-size: 18px !important;
+    background-color: white !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink:hover {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink .btnClick {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameCollect .tableRight {
+    width: 100% !important;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards {
+    display: block !important;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards {
+    margin: 0 auto;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1000px) {
+  .tableFrameCollect {
+    display: block !important;
+  }
+  .tableFrameCollect .tableLeft {
+    width: 100% !important;
+    padding-top: 0px;
+  }
+  .tableFrameCollect .tableLeft ul {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink {
+    padding: 5px 9px !important;
+    font-size: 18px !important;
+    background-color: white !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink:hover {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameCollect .tableLeft ul li .btnLink .btnClick {
+    background-color: #fc8f05 !important;
+  }
+  .tableFrameCollect .tableRight {
+    width: 100% !important;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 15px !important;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards {
+    margin: 0 auto;
+  }
+  .tableFrameCollect .tableRight .collectCard .collect_right .right_cards .cards .cardOutside {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) and (max-width: 1500px) {
+  .right_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 15px !important;
+  }
+  .right_cards .cards {
+    margin: 0 auto;
+  }
+  .right_cards .cards .cardOutside {
+    width: 100%;
+  }
+}/*# sourceMappingURL=collect.css.map */
